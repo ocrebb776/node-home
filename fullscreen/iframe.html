@@ -1,0 +1,38 @@
+<iframe id="main" src="https://ocrebb776.github.io/" title="8 letter olidle" width="100vw" height="100vh">might
+    not
+    work go to https://ocrebb776.github.io/8-letter-olidle/
+</iframe>
+<title>
+    iframe
+</title>
+<style>
+    html {
+        margin: 0px;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 56.25vw;
+        /* height:width ratio = 9/16 = .5625  */
+        max-height: 100vh;
+        max-width: 177.78vh;
+        /* 16/9 = 1.778 */
+        margin: auto;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        /* vertical center */
+        left: 0;
+        right: 0;
+        /* horizontal center */
+        transform: scale(0.9);
+        text-align: center;
+        border: none;
+    }
+</style> <a href="../../../home">go home</a>
+<script>let xrz = window.location.href
+    let name = xrz.slice(39, 1000)
+    console.log(name)
+    document.getElementById('main').src = "https://ocrebb776.github.io/" + name
+</script>

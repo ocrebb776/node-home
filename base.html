@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        .title,
+        .footer {
+            width: 100vw;
+            text-align: center;
+            background-color: red;
+            font-size: 50px;
+            position: fixed;
+            color: white;
+            height: 10vh;
+        }
+
+        .title {
+            top: 0px;
+            left: 0px;
+        }
+
+        .footer {
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .main {
+            top: 10vh;
+            text-align: center;
+            height: 79vh;
+            position: absolute;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 3fr 10fr 3fr;
+            grid-template-rows: 3fr 10fr 3fr;
+        }
+
+
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .box {
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        a {
+            display: block;
+            padding: 2px 0px 2px 0px;
+            background-color: rgb(223, 223, 223);
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title">
+        Welcome To Base Page
+    </div>
+    <div class="main">
+        <div></div>
+        <h1>all content</h1>
+        <div></div>
+        <div></div>
+        <div>
+            <div class="boxes">
+                <div class="box">
+                    homepage
+                    <img id="home">
+                    <a href="home">GO TO</a>
+                </div>
+                <div class="box">email system
+                    <img id="email">
+                    <a href="view/http://192.168.68.174:8080/">GO TO</a>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="footer">
+        Made By Oliver crebbin
+    </div>
+    <script src="https://cdn.babylonjs.com/babylon.js">
+    </script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+</body>
+
+</html>
+<script>
+    document.getElementById("home").src = "http://192.168.68.174:1233/home.jpg"
+    document.getElementById("email").src = "http://192.168.68.174:1233/email.jpg"
+</script>
