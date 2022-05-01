@@ -31,8 +31,8 @@
         border: none;
     }
 </style> <a href="../../../home">go home</a>
-<script>let xrz = window.location.href
-    let name = xrz.slice(39, 1000)
+<script>let xrz = window.location.pathname
+    let name = xrz.slice(13, 1000)
     console.log(name)
     document.getElementById('main').src = "https://ocrebb776.github.io/" + name
 </script>
